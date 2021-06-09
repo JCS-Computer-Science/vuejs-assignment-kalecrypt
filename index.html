@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h2.showtext {
+            font-size: 50px;
+            display: block;
+        }
+
+        button.button {
+            font-size: 90px;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>
+        cat fact and image generator
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="vuething.js" defer>
+
+    </script>
+</head>
+
+<body id="background">
+
+
+
+    <div id="app" class="text-center">
+
+        <img v-bind:src="catImage" alt="image of a cat " width="600" height="600">
+        <br>
+        <h1>{{catFact}}</h1>
+        <br>
+        <h2 class="showtext"> </h2>
+        <br>
+        <br>
+        <button v-on:click="getfact()" class="button ">get fact </button>
+
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
